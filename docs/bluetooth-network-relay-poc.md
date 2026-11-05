@@ -80,7 +80,7 @@ adb -d shell ip route
 
 只有 Phase A 结果完整、并且用户单独批准安装测试 APK 后才进行。
 
-构建一个最小 Kotlin/Android APK（不依赖 Wear OS 专有 API）：
+构建一个最小 Java/Android APK（不依赖 Wear OS 专有 API）。源码骨架已放在 [poc/relay-probe](../poc/relay-probe/README.md)，但尚未构建或安装：
 
 - 权限：INTERNET、ACCESS_NETWORK_STATE；
 - 一个页面显示 ConnectivityManager.activeNetwork 和必要的能力摘要；
@@ -91,7 +91,7 @@ adb -d shell ip route
 - 不包含模型 API Key、账号 Token 或 Cookie；
 - 只访问预先写入测试配置的公开 HTTPS 地址。
 
-建议使用两个不同网络环境常见的 HTTPS 正向测试地址，分别记录结果，避免单个域名不可达造成误判：
+当前源码使用两个 HTTPS 测试地址，分别记录结果，避免单个域名不可达造成误判：
 - https://example.com/
 - https://www.baidu.com/
 
