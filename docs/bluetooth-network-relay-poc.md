@@ -24,7 +24,7 @@
 
 ### 设备历史信息
 
-关联研究仓库 may-watch-research 曾记录 OWW263、Android 11、API 30 和 ADB 授权连接。该信息是历史记录，不代表本轮设备仍在线或系统版本未变；执行前必须重新只读确认。
+关联研究仓库 may-watch-research 曾记录 OWW263、Android 11、API 30 和 ADB 授权连接。该信息是历史记录，不代表本轮设备仍在线或系统版本未变；执行前必须重新只读确认。该研究还明确区分了 ColorOS Watch 与 Wear OS：本 POC 不把 Android 官方 Wear OS 的“蓝牙连接时经手机代理网络”规则直接套用到 X3 Mini。可参考 [Wear OS 网络通信说明](https://developer.android.com/training/wearables/data/network-communication?hl=zh-cn)，但它不是 X3 Mini 的兼容性证明。
 
 ## 2. 要回答的唯一问题
 
